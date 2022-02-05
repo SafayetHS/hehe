@@ -1,0 +1,133 @@
+Task-3
+#here var_1 is the 1st input and var_2 is the 2nd input
+var_1= int(input("Write first number: "))
+var_2= int(input("Write second number: "))
+if (var_1 > var_2):
+    print("First is greater")
+elif(var_2 > var_1):
+    print("Second is greater")
+else:
+    print("The numbers are equal")
+
+T-4
+var_1=int(input("First number: "))
+var_2=int(input("Second number: "))
+
+if (var_1 > var_2):
+    print(var_1-var_2)
+elif(var_2 > var_1):
+    print(var_2 - var_1)
+else:
+    print("0")
+
+T-5
+#x is used to take the number from the user
+x=int(input("Input a number: "))
+if (x%2)==0 :
+    print("The number is even")
+else:
+    print("The number is odd")
+
+T-6
+num = int(input("Enter the number = "))
+if (num % 2 ==0 or num % 5 == 0):
+    print(num)
+else:
+    print("Not a multiple")
+
+T-7
+num = int(input("Enter the number = "))
+if (num % 2 ==0 and num % 5 == 0):
+    print("multiple of 2 and 5 both")
+elif (num % 2 ==0 or num % 5 == 0):
+    print(num)
+else:
+    print("Not a multiple")
+
+T-8
+num = int(input("Enter the number = "))
+if (num % 2 == 0 and num % 5 == 0):
+    print(num)
+else:
+    print("Not a multiple of 2 and 5 both")
+
+T-9
+num = int(input("Enter the number = "))
+if (not(num % 2 == 0 or num % 5 == 0)):
+    print(num)
+else:
+    print("No")
+
+T-10
+num = int(input("Enter a number: "))
+if (num%2!=0 or num%5!=0):
+    print(num)
+else:
+    print("No")
+
+T-11
+marks=int(input("Enter student’s mark for a single subject: "))
+if (marks<0 or marks>100):
+    print("Invalid marks")
+elif marks>=90:
+    print("A")
+elif (marks>=80 and marks <=89 ):
+    print("B")
+elif (marks>=70 and marks <=79 ):
+    print("C")
+elif (marks>=60 and marks <=69 ):
+    print("D")
+elif (marks>=50 and marks <=59 ):
+    print("E")
+else:
+    print("F")
+
+T-12
+working_hours=int(input("Enter the hours worked: "))
+if (working_hours<0):
+    print("Hour cannot be negative")
+elif (working_hours>168):
+    print("Impossible to work more than 168 hours weekly")
+elif (working_hours<=40):
+    print(int(200.00*working_hours))
+elif (working_hours>40):
+    print(int(8000+((working_hours-40)*300)))
+
+T-13
+seconds = int(input("Write seconds: "))
+hours = seconds // 3600
+seconds = seconds%3600
+
+minutes = seconds//60
+seconds =seconds%60
+
+print ('Hours: ',end='')
+print (int(hours),end='')
+print (' Minutes: ',end='')
+print (int(minutes),end='')
+print (' Seconds: ' ,end='')
+print(int(seconds))
+
+T-14
+S = int(input("Input the value of S: "))
+if S<100:
+    L=(3000-125*S**2)
+    print(L)
+else:
+    L=12000/(4+(S**2/14900))
+    print(L)
+
+T-15
+meal_time = int(input("Enter time to know meal time: "))
+if (meal_time < 0 or meal_time >23):
+    print("Wrong time")
+elif (4<=meal_time<=6):
+    print("Breakfast")
+elif (12<=meal_time<=13):
+    print("Lunch")
+elif (16<=meal_time<=17):
+    print("Snacks")
+elif (19<=meal_time<=20):
+    print("Dinner")
+else:
+    print("Patience is a virtue")
